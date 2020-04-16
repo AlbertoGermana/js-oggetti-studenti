@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>Studenti</title>
+    </head>
+    <body>
+    
+        <div class="site">
+            <div class="site_container">
+
+                <header>
+                    <h1>Studenti della classe 4B</h1>
+                </header>
+                
+                <main>
+                    <div id="mainStudents">
+
+
+                    </div>
+                    <div id="addStudents">
+                        <div>
+                            <div class="form-row">
+                                <p>Nome: </p><input id="addStudentName" type="text">
+                            </div>
+                            <div class="form-row">
+                                <p>Cognome: </p><input id="addStudentSurname" type="text">
+                            </div>
+                            <div class="form-row">
+                                <p>Età: </p><input id="addStudentAge" type="text">
+                            </div>
+                        </div>
+                        <button id="addStudent">Aggiungi Studente</button>
+                        
+                    </div>
+                </main>
+                
+                <footer></footer>
+                
+                <script id="student-template" type="text/x-handlebars-template">
+                
+                    <div class="student">
+                        <h4>Studente n°{{studentNum}}</h4>
+                        <p><b>Nome: </b>{{studentName}}</p>
+                        <p><b>Cognome: </b>{{studentSurname}}</p>
+                        <p><b>Età: </b>{{studentAge}}</p>
+                    </div>
+                    
+                </script>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

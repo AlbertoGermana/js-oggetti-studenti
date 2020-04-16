@@ -1,0 +1,93 @@
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++ RESET RULES +++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+ .site{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+.site_container{
+  height: 90vh;
+  min-width: 650px;
+  max-width: 1000px;
+  width: 90vw;
+}
+header, footer{
+  height: 80px;
+  width: 100%;
+  background-color: steelblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main{
+  height: calc(100% - 160px);
+  width: 100%;
+  background-color: #7BB4E8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mainStudents{
+  height: 85%;
+  width: calc((100% / 2) - 60px);
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow-y: auto;
+  background-color: #94D2E8;
+  border-radius: 15px;
+}
+#addStudents{
+  width: 260px;
+  padding: 10px;
+  background-color: #94D2E8;
+  border-radius: 15px;
+}
+#addStudents button{
+  margin: 0 42%;
+}
+.form-row{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1px;
+}
+.student{
+  width: 160px;
+  margin: 5px;
+  padding: 5px;
+}
+
+ /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+ /* ++++++++++++++++++++++++++++++++ SCROLL BAR RULES +++++++++++++++++++++++++++++++++++ */
+ /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+ ::-webkit-scrollbar {
+   width: 14px;
+   height: 14px;
+ }
+ ::-webkit-scrollbar-button {
+   width: 0px;
+   height: 0px;
+ }
+ ::-webkit-scrollbar-thumb {
+   background: #7BB4E8;
+   border-radius: 60px;
+   border: 1px solid #94D2E8;
+ }
+ ::-webkit-scrollbar-track {
+   background: transparent;
+   border: 0px solid #94D2E8;
+   border-radius: 39px;
+ }
+ ::-webkit-scrollbar-corner {
+   background: transparent;
+ }
